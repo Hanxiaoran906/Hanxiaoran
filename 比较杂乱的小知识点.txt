@@ -1,0 +1,134 @@
+一些学习过程中遇到的问题及知识点：
+
+————————————————————————————————————————
+
+	一个小知识点：
+		清除默认样式后，在插入img、span等标签时，相邻标签间会有几像素的间隔，这个间隔为文本分隔符。
+		
+		p标签里不能放div，a标签里不能放a标签。
+
+————————————————————————————————————————
+
+	关于将对象定位到屏幕正中（自适应）：
+	
+	css { position: absolute; left: 50%; top: 50%;
+		margin-left: -0.5Xpx; margin-right: -0.5Ypx;}
+
+	/* 相对于文档进行定位使用 position：absolute；
+	相对于屏幕（可视窗口）定位使用 position：fixed；*/
+
+————————————————————————————————————————
+
+	两列布局：
+	
+
+	<div class="right"></div>
+	<div class="left"></div> <!-- 先写右边的一列，在进行定位时会定位到最右边 -->
+
+	.right { width:100px; height:100px; background-color:#f40;
+		position:absolute; right:0px;}
+	.left { height:100px; background-color:black;
+		margin-right:100px; } /* 利用margin-right空出右边盒子所占的位置 */
+
+————————————————————————————————————————
+
+	margin塌陷：
+
+	问题描述：
+	    两个盒子（父子）的margin-top选择数值大的共用。
+	解决（弥补）办法：
+	    开启BFC ：  1.position：absolute； 
+			2.display：inline-block； 会变成行内块不能独占一行；
+			3.float：left/right；
+			4.overflow：hidden； 会将溢出部分进行隐藏；
+
+	    通过 ：before伪类 添加内容分隔父子元素外边距：
+		.div:before{
+			content:""；
+			display: table；}   /* 在子元素没浮动时可使用该方法。（浮动后自动开启BFC，就解决了。） */
+
+	   /* 粗暴方法：在父元素上加1px的边框，将父子元素的外边距分隔。禁止使用！！！ */
+
+————————————————————————————————————————
+
+	span 标签： 两个同行的span标签外边距不重合，距离加法计算。
+	margin 合并：
+		上下两个div间的外边距采用数值大的（即会合并）。
+		解决办法：添加一个容器（div），开启BFC。
+			实际开发中不采用，通过计算间距避免问题发生。
+
+————————————————————————————————————————
+
+	高度塌陷：
+
+	  （1）通过开启父元素的BFC ：
+		1.设置元素浮动； 2.设置元素绝对定位； 3.设置元素为inline-block；
+		/* 可以解决问题，但会导致父元素宽度丢失，不推荐；且浮动会导致下面元素上移，影响布局 */
+		4.设置overflow：hidden； /* 因 IE6 及以下不支持BFC，故添加 zoom：1；兼容 IE6  */
+
+	  （2）通过清除子元素的浮动：
+		在父元素的最后添加一个空白div（或其他标签），对div设置 clear：both；清除上方元素的浮动效果。
+		/* 缺点：会在HTML中添加多余的结构 */
+
+	  （3）通过：after伪类清除浮动：
+		原理：向元素最后添加一个空白的块元素，然后对其进行清除浮动；
+		.div:after{ content:""; 
+			display: inline-block; 
+			clear: both;}
+		.div{ zoom: 1; /* 兼容IE6 */ } 
+
+	   ※ 既可以解决高度塌陷，又可以解决margin塌陷（垂直外边距重叠）：/* 疑问：高度塌陷情况下不会发生margin塌陷。 */
+		.div:before,.div:after {  /* div为父元素 */
+			content: "";
+			display: table;
+			clear:both;}
+		.div{ zoom: 1; /* 兼容IE6 */ }
+
+————————————————————————————————————————
+
+	单行文本盛不下时末端以省略号显示：
+
+	.div{   overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	 }
+
+————————————————————————————————————————
+
+	css、js失效时展示替代文本：（淘宝网logo）
+	
+	两种方法：
+		1.{
+			width: 190px; height:90px; background-image: url(xxx); background-size: 190px 90px; 
+			text-ident: 300px; /* 超出背景图片 */
+			white-space: nowrap; /* 禁止换行 */
+			overflow: hidden; /* 溢出隐藏 */
+		} /* 原理：将文本通过缩进移动到背景区外，通过hidden进行隐藏。 */
+		2.{
+			width:190px; height: 0; padding-bottom: 90px; overflow: hidden;
+			background-image: url(xxx); background-size:190px 90px;
+		} /* 原理：padding区无法添加文本，但可以添加背景图片，将文本挤到背景区外进行隐藏。 */
+
+————————————————————————————————————————
+
+————————————————————————————————————————
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
