@@ -23,7 +23,8 @@
          
 ### HTML5新增元素
 
-  结构元素：header,footer,section,article,aside,nav,main,figure...  
+  结构元素：  
+  header,footer,section,article,aside,nav,main,figure...  
   功能元素：  
         hgroup  : 对标题进行组合；  `<hgroup>...</hgroup>`  
         video   : 定义视频；  `<video src="movie.ogg" controls="controls">video元素</video>`  
@@ -38,7 +39,8 @@
                 以使脚本能够把想绘制的东西绘制到这块画布上。  `<canvas id="myCanvas" width="200" height="200"></canvas>`  
         output  : 表示不同类型的输出；  `<output></output>`  
         source,menu,rt,rp,wbr,command,details,summary,datalist,datagrid,keygen,progress,meter,track......  
-  表单元素：通过type属性，HTML5为input元素新增了很多类型，如下:  
+  表单元素：  
+         通过type属性，HTML5为input元素新增了很多类型，如下:  
         tel, search, url, email, datetime, date, month, week, time, datetime-local, number, range ,color...  
         格式：`<input type="ele" />`  
 
@@ -55,7 +57,7 @@
 ### HTML5全局属性
 
 contentEditable : 主要功能是允许用户可以在线编辑元素中的内容；是一个布尔值，可以定义为false或true。  
-contextmenu : 用于定义<div>元素的上下文菜单，在用户右键单击元素时出现。//只有Firefox支持  
+contextmenu : 用于定义`<div>`元素的上下文菜单，在用户右键单击元素时出现。//只有Firefox支持  
 data-* : 可以自定义用户数据。  
 draggable : 定义元素是否可以被拖动，true、false、auto。  
 dropzone : 定义在元素上拖动数据时，是否复制、移动或链接被拖动数据。//值为：copy,move,link（不被支持）  
