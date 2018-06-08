@@ -21,7 +21,7 @@
            rev:定义其他页面与当前页面之间的链接关系<br />
 
 <h3>HTML5新增元素</h3>
-
+<pre>
   结构元素：header,footer,section,article,aside,nav,main,figure...<br />
   功能元素：<br />
         hgroup  : 对标题进行组合；  <hgroup>...</hgroup><br />
@@ -39,7 +39,7 @@
   表单元素：通过type属性，HTML5为input元素新增了很多类型，如下：<br />
         tel, search, url, email, datetime, date, month, week, time, datetime-local, number, range ,color...<br />
         格式：<input type="ele" /><br />
-
+</pre>
 <h2>CSS（3）部分</h2>
 
 
