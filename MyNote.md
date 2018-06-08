@@ -41,8 +41,30 @@
   表单元素：通过type属性，HTML5为input元素新增了很多类型，如下:  
         tel, search, url, email, datetime, date, month, week, time, datetime-local, number, range ,color...  
         格式：`<input type="ele" />`  
-      
-<h2>CSS（3）部分</h2>
+
+### HTML5属性
+  表单属性：  
+        autofocus：自动获得焦点；  
+        placeholder：对用户的输入进行提示；  
+        form：声明它属于哪个表单；  
+        required：（text与textarea）检查该元素内一定要有内容才允许提交；  
+        为input元素增加autocomplete、min、max、multiple、pattern和step属性。同时还有一个新的list元素与datalist元素配合使用。datalist元素与autocomplete属性配合使用。multiple属性允许在上传文件时一次上传多个文件。  
+        为input元素、button元素、form元素增加了novalidate属性，该属性可以取消提交时进行的有关检查，表单可以被无条件地提交。  
+  链接属性、其他属性...  
+  
+### HTML5全局属性
+
+contentEditable : 主要功能是允许用户可以在线编辑元素中的内容；是一个布尔值，可以定义为false或true。  
+contextmenu : 用于定义<div>元素的上下文菜单，在用户右键单击元素时出现。//只有Firefox支持  
+data-* : 可以自定义用户数据。  
+draggable : 定义元素是否可以被拖动，true、false、auto。  
+dropzone : 定义在元素上拖动数据时，是否复制、移动或链接被拖动数据。//值为：copy,move,link（不被支持）  
+hidden : 用于设置元素的可见状态，取值为布尔值。eg：`<p hidden>这个段落应该被隐藏</p>`//除了IE，均支持  
+spellcheck : 定义是否对元素进行拼写和语法检查，取值为布尔值。  
+translate : 定义是否应该翻译元素内容，取值为yes，no。//目前不受支持  
 
 
-<h2>JavaScript部分</h2>
+## CSS（3）部分
+
+
+## JavaScript部分
