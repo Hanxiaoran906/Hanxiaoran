@@ -34,7 +34,8 @@
         bdi     : 定义文本的文本方向，使其脱离其周围文本的方向设置（不受父元素文本方向的影响）
         figcaption: 定义figure元素的标题；
         time    : 表示日期或时间；
-        canvas  : 表示图形，如图表和其它图像。这个元素本身没有行为，仅提供一块画布，但它把一个绘图API展现给客户端JavaScript，以使脚本能够把想绘制的东西绘制到这块画布上。  <canvas id="myCanvas" width="200" height="200"></canvas>
+        canvas  : 表示图形，如图表和其它图像。这个元素本身没有行为，仅提供一块画布，但它把一个绘图API展现给客户端JavaScript，
+                以使脚本能够把想绘制的东西绘制到这块画布上。  <canvas id="myCanvas" width="200" height="200"></canvas>
         output  : 表示不同类型的输出；  <output></output>
         source,menu,rt,rp,wbr,command,details,summary,datalist,datagrid,keygen,progress,meter,track......
   表单元素：通过type属性，HTML5为input元素新增了很多类型，如下：<br />
