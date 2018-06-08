@@ -22,10 +22,10 @@
 
 <h3>HTML5新增元素</h3>
 <pre>
-  结构元素：header,footer,section,article,aside,nav,main,figure...<br />
-  功能元素：<br />
-        hgroup  : 对标题进行组合；  <hgroup>...</hgroup><br />
-        video   : 定义视频；  <video src="movie.ogg" controls="controls">video元素</video><br />
+  结构元素：header,footer,section,article,aside,nav,main,figure...
+  功能元素：
+        hgroup  : 对标题进行组合；  <hgroup>...</hgroup>
+        video   : 定义视频；  <video src="movie.ogg" controls="controls">video元素</video>
         audio   : 定义音频；  <audio src="audio.wav">audio元素</audio><br />
         embed   : 用来插入各种多媒体（Midi,Wav,AIFF,AU,MP3）；  <embed src="horse.wav" /><br />
         mark    : 高亮显示关键字；  <mark></mark><br />
