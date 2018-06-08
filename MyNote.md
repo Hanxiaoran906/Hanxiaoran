@@ -5,24 +5,24 @@
 <h2>HTML（5）部分</h2>
 
 <h3>HTML4元素</h3>
-<pre>
+<code>
    HTML4共包含91个元素，这些元素都是针对特定内容、结构或特性定义的。具体分为：
     
   结构元素：div,span,ol,ul,li,dl,dt,dd,del,ins,h1~h6,p,hr......
   内容元素：a,abbr,acronym,address,dfn,kbd,samp,var,tt,code,pre,blockquote,cite,q,strong,em......
   修饰元素：b,i,big,small,sup,sub,bdo,br......
-</pre>
+</code>
 <h3>HTML4属性</h4>
-<pre>
+<code>
   核心属性：class,id,style
   语言属性：lang(定义元素的语言代码或编码）,dir（定义文本方向，ltr和rtl）
   键盘属性：accesskey(定义访问某元素的键盘快捷键），tabindex（定义元素的Tab键索引编号）
   内容属性：alt,title,longdesc,cite,datetime......
   延展属性：rel:定义当前页面与其他页面的关系；
            rev:定义其他页面与当前页面之间的链接关系
-</pre>
+</code>
 <h3>HTML5新增元素</h3>
-<pre>
+<code>
   结构元素：header,footer,section,article,aside,nav,main,figure...
   功能元素：
         hgroup  : 对标题进行组合；  <hgroup>...</hgroup>
@@ -41,7 +41,7 @@
   表单元素：通过type属性，HTML5为input元素新增了很多类型，如下：<br />
         tel, search, url, email, datetime, date, month, week, time, datetime-local, number, range ,color...
         格式：<input type="ele" />
-</pre>
+</code>
 <h2>CSS（3）部分</h2>
 
 
