@@ -89,6 +89,8 @@ eg：.container{
 </pre>
 则box的高度为100px；而上外边距为40px。
 
+#### 让Chrome支持12px以下大小的文字
+通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决。
 
 
 ## JavaScript部分
