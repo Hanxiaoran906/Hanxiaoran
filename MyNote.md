@@ -76,5 +76,19 @@ ID选择器 ： 100；
 行内样式 ： 1000；  
 ！important ： 最高。  
 
+#### 元素竖向的百分比设定
+*元素height属性取值百分比，是相对于容器高度取值。  
+*元素的竖直方向的内外边距取值百分比，参考的是容器的宽度，而不是高度。  
+<pre>
+eg：.container{
+         width:200px; height:100px;
+    }
+    .box{
+         margin-top:20%; height:50%;
+    }
+</pre>
+则box的高度为100px；而上外边距为40px。
+
+
 
 ## JavaScript部分
