@@ -106,3 +106,23 @@ eg：.container{
 
 
 ## JavaScript部分
+
+#### 数据类型
+数据类型分为两种：  
+原始值：Undefined,Null,Boolean,Number,String  
+引用值：object,Array,function  
+
+### 预编译过程
+1.生成执行器上下文AO = {}  
+2.输入形参和变量，赋值为undefined  
+3.形参实参相统一  
+4.函数提升（在函数体里找函数声明，值赋予函数体）  
+
+
+
+
+
+
+
+
+
